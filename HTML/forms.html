@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+        <p>
+            <button type="submit">On the top</button>
+        </p>
+        <label for="username">Enter a username:</label>
+        <input id="username" type="text" name="username" placeholder="Enter your username">
+        <lable for="password">Enter a password:</lable>
+        <input id="password" type="password" name="password" placeholder="Enter your password" >
+        <label for="color">Choose a color:</label>
+        <input type="color" id="color" name="color">
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+
+
+
+    <div class="preference">
+        <label for="cheese">Do you like cheese?</label>
+        <input type="checkbox" name="cheese" id="cheese">
+    </div>
+
+    <form action="https://www.reddit.com/search/">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+    </form>
+
+
+
+<label for="">Any special request</label>
+<textarea id="requests" rows="10"></textarea>
+
+<h2>Validation Demo</h2>
+<form action="/dummy">
+    <label for="">Enter First Name</label>
+    <input type="text" name="first" id="first" required>
+    <button>Submit</button>
+</form>
+    
+</body>
+
+<fieldset>
+    <legend>Select a maintenance drone:</legend>
+  
+    <div>
+      <input type="radio" id="huey" name="drone" value="huey" checked />
+      <label for="huey">Huey</label> <!-- for corresponding to the id attribute -->
+    </div>
+  
+    <div>
+      <input type="radio" id="dewey" name="drone" value="dewey" />
+      <label for="dewey">Dewey</label>
+    </div>
+  
+    <div>
+      <input type="radio" id="louie" name="drone" value="louie" />
+      <label for="louie">Louie</label>
+    </div>
+  </fieldset>
+
+
+  <label for="pet-select">Choose a pet:</label>
+<select name="pets" id="pet-select">
+  <option value="">--Please choose an option--</option>
+  <option value="dog">Dog</option>
+  <option value="cat">Cat</option>
+  <option value="hamster">Hamster</option>
+  <option value="parrot">Parrot</option>
+  <option value="spider">Spider</option>
+  <option value="goldfish">Goldfish</option>
+</select>
+
+<p>
+    <form>
+    <label for="cheese amount">Amount of cheese</label>
+    <input type="range" id="cheese amount" min="0" max="10" name="cheese level">
+</form>
+</p>
+  
+</html>
